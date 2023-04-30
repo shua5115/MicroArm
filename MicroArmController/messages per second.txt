@@ -1,0 +1,12 @@
+115200 bits/s
+64 bits/message
+Find s/message
+64/115200=0.00055555556 s/message
+1800 messages/second
+Find messages per 5 ms
+1.8 messages/ms * 5ms = 9 messages
+
+To be safe, read 8 messages.
+
+Pass a function pointer to the sync() function to run during the 20 ms wait loop.
+The function pointer is accompanied by an uint16_t which describes how many microseconds you anticipate the function call to last. In the timing loop, if the time remaining is less than or equal to that amount of time, then the loop does not run the function.
