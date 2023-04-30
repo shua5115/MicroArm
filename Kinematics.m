@@ -99,3 +99,9 @@ q2 = atan2(two_link_y, two_link_x) - atan2(forearm_len*sin(q3), upper_arm_len + 
 q4 = theta-q3-q2;
 
 joint_positions = [q1 q2 q3 q4]
+
+%% Lines of Code in total
+% After finishing the project, I counted approximately how many lines of
+% code are in each file which was used in the final project. This estimate
+% is inflated, but not by much.
+loc = 130+108+83+105+51+154+135+25+141+38+73+118+47+30+635+816+499+29+22+78+95+135+14+18+101
